@@ -9,20 +9,12 @@ Auto XP Farmer for Duolingo.
 1. Duolingo Auth Token
     - To get this information run the following code in your web browser console:
 ```
-    document.cookie
-        .split(';')
-        .map(cookie => cookie.trim())
-        .find(cookie => cookie.includes('jwt_token'))
-        ?.split('=')[1];
+  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjYzMDcyMDAwMDAsImlhdCI6MCwic3ViIjo5NDcwMzM5NjF9.9xl6bk8gGNXwYtTRj2zTnAiHNjI_7KCSrpF6tSVkSMw
 ```
 2. Duolingo User ID
     - To get this information run the following code in your web browser console:
 ```
-    document.cookie
-        .split(';')
-        .map(cookie => cookie.trim())
-        .find(cookie => cookie.includes('logged_out_uuid'))
-        ?.split('=')[1];
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjYzMDcyMDAwMDAsImlhdCI6MCwic3ViIjo5NDcwMzM5NjF9.9xl6bk8gGNXwYtTRj2zTnAiHNjI_7KCSrpF6tSVkSMw
 ```
 3. After obtaining these values, store each of them as repository secrets. 
     - Go to repository Settings > Secrets and variables > Actions
